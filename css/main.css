@@ -38,6 +38,12 @@ body {
     word-wrap: break-word;
 }
 
+hr {
+  border: 2px solid rgba(var(--color-purple-500));
+  margin-top: var(--spacing-four);
+  margin-bottom: var(--spacing-four);
+}
+
 /* Buttons */
 .button {
   font-size: 1rem;
@@ -108,7 +114,6 @@ button {
   opacity: .9;
 }
 
-
 /* Top navigation */
 
 .page-header {
@@ -172,7 +177,7 @@ button {
   }
 }
 
-section {
+.content-container {
   animation: transitionIn 0.75s;
 }
 
@@ -194,7 +199,7 @@ section {
   padding-bottom: var(--spacing-five);
 }
 
-.content-container img {
+img.cityscape {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -301,11 +306,25 @@ h6, .h6 {
 
 
 .small-purple-header {
-  font-size: 0.87rem;
+  font-size: 1rem;
   line-height: 1.4;
+  letter-spacing: .1rem;
   font-family:'Roboto', sans-serif;
   font-weight: 500;
   color: rgba(var(--color-purple-500));
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 4px;
+}
+
+
+.small-white-header {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: .2rem;
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+  color: rgba(var(--color-white));
   margin: 0px;
   padding: 0px;
   margin-bottom: 4px;
@@ -328,6 +347,11 @@ h6, .h6 {
 a {
   text-decoration: none;
   color: rgba(var(--color-purple-500));
+  font-weight: 500;
+}
+
+a:hover {
+  border-bottom: 2px solid rgba(var(--color-purple-500));
 }
 
 .h1-reverse {
@@ -335,16 +359,16 @@ a {
   line-height: 1.4;
   font-family: 'Bellota Text', cursive;
   font-variant-ligatures: no-common-ligatures;
-  font-weight: 700;
+  font-weight: 400;
   color: rgba(var(--color-white));
 }
 
 .extra-large-reverse {
   font-size: 1.5rem;
-  line-height: 1.4;
+  line-height: 1.6;
   font-family: 'Bellota Text', cursive;
   font-variant-ligatures: no-common-ligatures;
-  font-weight: 700;
+  font-weight: 400;
   color: rgba(var(--color-white));
   margin: 0px;
 }
@@ -361,7 +385,7 @@ a {
 
 .medium-reverse {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   font-family:'Roboto', sans-serif;
   font-weight: 300;
   color: rgba(var(--color-white));
@@ -375,8 +399,45 @@ a {
   color: rgba(var(--color-white));
 }
 
-/* Responsive behavior */
+/* process timeline */
 
+.content-container ul {
+  padding: 0px;
+  text-align: center;
+}
+
+.content-container ul li {
+  display: inline-block;
+  margin-right: var(--spacing-two);
+  color: rgba(var(--color-white));
+  line-height: 2.5;
+  margin-top: var(--spacing-two);
+}
+
+.count {
+  background-color: rgba(var(--color-white));
+  color: rgba(var(--color-purple-500));
+  padding: 8px 16px 8px 16px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tools {
+  margin-top: var(--spacing-two);
+}
+
+img.logo {
+  width: 32px;
+}
+
+.tool {
+  margin-top: var(--spacing-one);
+}
+
+
+
+/* Responsive behavior */
 
 
 @media only screen and (max-width: 1024px) {
