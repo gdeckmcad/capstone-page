@@ -451,6 +451,10 @@ img.logo {
     padding-top: 8px;
   }
 
+  .main-nav {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (max-width: 640px) {
