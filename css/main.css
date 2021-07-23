@@ -474,26 +474,30 @@ img.logo {
 
 @media only screen and (max-width: 1024px) {
   .content-container {
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
   }
 
-  .main-nav img {
-    width: 325px;
-    padding-top: 8px;
+  .main-nav {
+    grid-template-columns: 30% 70%;
   }
 
-  .main-nav {
-    display: inline-block;
+}
+
+@media only screen and (max-width: 975px) {
+  
+  .main-nav ul{
+    display: none;
+  }
+
+  .content-container {
+    width: 70vw;
+    margin: 0 auto;
   }
 
 }
 
 @media only screen and (max-width: 640px) {
-  
-  .main-nav ul{
-    display: none;
-  }
 
   .two-column {
     display: grid;
