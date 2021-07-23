@@ -163,6 +163,10 @@ button {
   padding-top: 8px;
 }
 
+.selected {
+  border-bottom: 1px solid rgba(var(--color-white));
+}
+
 
 /* page transitions */
 @keyframes transitionIn {
@@ -205,7 +209,11 @@ img.cityscape {
   margin-right: auto;
   padding-bottom: var(--spacing-one);
   width: 100%;
+}
 
+.two-column {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 
@@ -411,6 +419,9 @@ a:hover {
   margin-right: var(--spacing-two);
   color: rgba(var(--color-white));
   line-height: 2.5;
+  font-weight: 700;
+  font-family: 'Bellota Text', cursive;
+  font-variant-ligatures: no-common-ligatures;
   margin-top: var(--spacing-two);
 }
 
@@ -419,7 +430,6 @@ a:hover {
   color: rgba(var(--color-purple-500));
   padding: 8px 16px 8px 16px;
   border-radius: 40px;
-  font-weight: 600;
   text-align: center;
 }
 
