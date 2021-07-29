@@ -144,7 +144,6 @@ button {
   font-size: 1rem;
   letter-spacing: .05rem;
   font-family: 'Roboto', sans-serif;
-  font-variant-ligatures: no-common-ligatures;
   font-weight: 300;
   color: rgba(var(--color-white));
   text-decoration: none;
